@@ -1,0 +1,28 @@
+{
+  "name": "purescript-prettier",
+  "version": "0.0.1",
+  "description": "PureScript bindings for prettier",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcanti/purescript-prettier.git"
+  },
+  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcanti/purescript-prettier/issues"
+  },
+  "homepage": "https://github.com/gcanti/purescript-prettier",
+  "dependencies": {
+    "prettier": "^1.4.4"
+  },
+  "devDependencies": {},
+  "tags": [
+    "PureScript",
+    "prettier"
+  ],
+  "keywords": [
+    "PureScript",
+    "prettier"
+  ]
+}
