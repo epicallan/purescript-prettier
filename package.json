@@ -1,6 +1,6 @@
 {
   "name": "purescript-prettier",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PureScript bindings for prettier",
   "scripts": {},
   "repository": {
@@ -14,15 +14,9 @@
   },
   "homepage": "https://github.com/gcanti/purescript-prettier",
   "dependencies": {
-    "prettier": "^1.4.4"
+    "prettier": "1.5.2"
   },
   "devDependencies": {},
-  "tags": [
-    "PureScript",
-    "prettier"
-  ],
-  "keywords": [
-    "PureScript",
-    "prettier"
-  ]
+  "tags": ["PureScript", "prettier"],
+  "keywords": ["PureScript", "prettier"]
 }
