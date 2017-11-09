@@ -5,7 +5,9 @@ module Text.Prettier (
   defaultOptions,
   format,
   check,
-  formatWithCursor
+  formatWithCursor,
+  formatImpl,
+  checkImpl
 ) where
 
 import Prelude
@@ -20,8 +22,12 @@ data Parser
   = Babylon
   | Flow
   | TypeScript
-  | PostCSS
+  | CSS
+  | LESS
+  | SCSS
+  | MarkDown
   | JSON
+  | GraphQL
 
 type Options = {
   printWidth :: Int,
@@ -66,8 +72,12 @@ fromParser :: Parser -> String
 fromParser Babylon = "babylon"
 fromParser Flow = "flow"
 fromParser TypeScript = "typescript"
-fromParser PostCSS = "postcss"
+fromParser CSS = "css"
+fromParser LESS = "less"
+fromParser SCSS = "scss"
 fromParser JSON = "json"
+fromParser MarkDown = "markdown"
+fromParser GraphQL = "graphql"
 
 foreign import formatImpl :: (TrailingComma -> String) -> (Maybe Int -> Int) -> (Parser -> String) -> Options -> String -> String
 
