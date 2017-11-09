@@ -1,6 +1,6 @@
 {
   "name": "purescript-prettier",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "PureScript bindings for prettier",
   "scripts": {},
   "repository": {
