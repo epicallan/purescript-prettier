@@ -2,14 +2,14 @@ module Test.Main where
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
+import Effect (Effect)
 import Test.Spec (describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter.Console (consoleReporter)
-import Test.Spec.Runner (RunnerEffects, run)
+import Test.Spec.Runner (run)
 import Text.Prettier (check, defaultOptions, format)
 
-main :: Eff (RunnerEffects ()) Unit
+main :: Effect Unit
 main = run [consoleReporter] do
 
   describe "Prettier" do

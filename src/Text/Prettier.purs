@@ -66,7 +66,7 @@ fromTrailingComma All = "all"
 foreign import infinity :: Int
 
 fromRangeEnd :: Maybe Int -> Int
-fromRangeEnd = maybe infinity id
+fromRangeEnd = maybe infinity identity
 
 fromParser :: Parser -> String
 fromParser Babylon = "babylon"
@@ -93,4 +93,3 @@ foreign import formatWithCursorImpl :: (TrailingComma -> String) -> (Maybe Int -
 
 formatWithCursor :: Options -> String -> String
 formatWithCursor options source = formatWithCursorImpl fromTrailingComma fromRangeEnd fromParser options source
-
