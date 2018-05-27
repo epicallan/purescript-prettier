@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/gcanti/purescript-prettier",
   "dependencies": {
-    "prettier": "1.8.2"
+    "prettier": "1.12.1"
   },
   "devDependencies": {},
   "tags": [
