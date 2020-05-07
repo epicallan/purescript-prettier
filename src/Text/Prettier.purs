@@ -19,7 +19,7 @@ data TrailingComma
   | All
 
 data Parser
-  = Babylon
+  = Babel
   | Flow
   | TypeScript
   | CSS
@@ -55,7 +55,7 @@ defaultOptions = {
   jsxBracketSameLine: false,
   rangeStart: 0,
   rangeEnd: Nothing,
-  parser: Babylon
+  parser: Babel
 }
 
 fromTrailingComma :: TrailingComma -> String
@@ -69,7 +69,7 @@ fromRangeEnd :: Maybe Int -> Int
 fromRangeEnd = maybe infinity identity
 
 fromParser :: Parser -> String
-fromParser Babylon = "babylon"
+fromParser Babel = "babel"
 fromParser Flow = "flow"
 fromParser TypeScript = "typescript"
 fromParser CSS = "css"
