@@ -3,14 +3,15 @@ module Test.Main where
 import Prelude
 
 import Effect (Effect)
+import Effect.Aff (launchAff_)
 import Test.Spec (describe, it)
 import Test.Spec.Assertions (shouldEqual)
 import Test.Spec.Reporter.Console (consoleReporter)
-import Test.Spec.Runner (run)
+import Test.Spec.Runner (runSpec)
 import Text.Prettier (check, defaultOptions, format)
 
 main :: Effect Unit
-main = run [consoleReporter] do
+main = launchAff_ $ runSpec [consoleReporter] do
 
   describe "Prettier" do
 
